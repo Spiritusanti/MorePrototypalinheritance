@@ -20,3 +20,15 @@ multiplyBy5.__proto__
 
 //this makes the native function:
 Function.prototype
+
+
+// how to we use inheritance without using _proto_?
+// we use Object.create as below:
+
+let human = {
+  mortal: true
+}
+
+let socrates = Object.create(human)
+socrates.age = 45
+console.log(socrates.mortal)
