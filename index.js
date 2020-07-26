@@ -32,3 +32,7 @@ let human = {
 let socrates = Object.create(human)
 socrates.age = 45
 console.log(socrates.mortal)
+
+// now let's learn about the following statement:"only functions have the prototype property"
+
+// however, things get funky with the base object since it is a function!!!!!! The base object is a constructor function that creates an object wrapper. Object.prototype in the base object and it is a function. The very last stop with properties in the prototype chain.
